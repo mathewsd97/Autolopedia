@@ -5,6 +5,19 @@
     padding: 5%;
 }
 
+label {
+    width: 10%;
+    padding-right: 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    /*column-count: 2;*/
+}
+ .column {
+    float: left;
+    width: 100%;
+}
+
 /* The navbar container */
 .topnav {
     overflow: hidden;
@@ -45,12 +58,13 @@
 .card a{
     background-color: grey;
     margin-top: 20px;
-    width: 50%;
+    width: 30%;
+    height: 40%;
     font-family: 'Sintony', sans-serif;
 }
 
 .card a:hover {
-    color: black;
+    color: lightblue;
 }
 
 /* Clear floats after the columns */
@@ -76,20 +90,24 @@
     margin: auto;   
 }
 
-/* Left column */
-.leftcolumn {   
+/* Main column */
+.mainText {   
+    float: left;
+    width: 100%;
+}
+ .leftColumn {
     float: left;
     width: 50%;
 }
 
-/* Right column */
-.rightcolumn {   
+.rightColumn {
     float: right;
     width: 50%;
 }
 
 .input[type=text] {
     width: 100%;
+    height: 70px;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -97,13 +115,21 @@
     outline: none;
 }
 
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    column-count: 2;
+}
+
 input[type=text]:focus {
-    background-color: lightblue;
+    background-color: pink;
 }
 
 /* Footer */
 .footer {
     text-align: center;
-    margin-top: 60%;
+    margin-top: 40%;
     font-family: 'Sintony', sans-serif;
 }
