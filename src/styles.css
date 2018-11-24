@@ -1,0 +1,54 @@
+.header {
+    background-color: #F1F1F1;
+    font-family: 'Sintony', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* The navbar container */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.row {
+    text-align: center;
+    vertical-align: center;
+    padding-top: 50px;
+
+}
+
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+.input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
