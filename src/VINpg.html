@@ -74,13 +74,30 @@
 				</div>
 				<div class="input">
 					<label for="languagelocale">Language & Locale:</label>
-					<input type="text" id="languagelocale" name="language_locale">
+					<div>
+						<label>
+						    <input type="radio" name="editList" value="US English"/>US English
+						</label>
+						<label>
+						    <input type="radio" name="editList" value="US Spanish"/>US Spanish
+						</label>
+					</div>
+					<div>
+						<label>
+						   	<input type="radio" name="editList" value="Canadian English"/>Canadian English
+						</label>
+						<label>
+						    <input type="radio" name="editList" value="Canadian French"/>Canadian French
+						</label>
+					</div>
 				</div>
 			</form>
 		</div>
-		<div class="mainText">
-			<button type="button" onclick="callApi()";"window.location.href='output.html'">Submit</button>
-		</div>
+		<div class="mainText" id="rounded1">
+				<div style="cursor: pointer;" onclick="callApi()";"window.location.href='output.html'">
+					SUBMIT BUTTON
+				</div>
+			</div>
 		<p id="demo"></p>
 	</div>
 </body>

@@ -5,12 +5,16 @@
     padding: 5%;
 }
 
+/*form  { display: table;      }*/
+/*p     { display: table-row;  }*/
+
 label {
     width: 10%;
     padding-right: 20px;
     margin: 8px 0;
     box-sizing: border-box;
     white-space: pre-wrap;
+    display: table-cell;
     /*column-count: 2;*/
 }
  .column {
@@ -94,7 +98,16 @@ label {
 .mainText {   
     float: left;
     width: 100%;
+    /*background-color: grey;*/
+    /*margin-top: 20px;*/
+    /*width: 30%;*/
+    /*height: 40%;*/
+    /*font-family: 'Sintony', sans-serif;*/
 }
+/*.mainText a:hover{   
+    color: lightblue;
+}*/
+
  .leftColumn {
     float: left;
     width: 50%;
@@ -121,6 +134,7 @@ input[type=text] {
     margin: 8px 0;
     box-sizing: border-box;
     column-count: 2;
+    /*display: table-cell;*/
 }
 
 input[type=text]:focus {
