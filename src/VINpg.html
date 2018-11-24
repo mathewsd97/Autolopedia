@@ -10,19 +10,77 @@
 			<h1>AUTOLOPEDIA</h1>
 		</div>
 		<div class="row">
-			<div class="leftcolumn">     	
+		  	<div class="leftColumn">   	
 				<form>
-					<label for="fname">Enter your Vehicle Identification Number (VIN)</label>
-					<div class = "input">
-						<input type="text" id="fname" name="fname" value="9 digit number">
-                    </div>
-                    <button type="button"
-                        onclick="document.getElementById('demo').innerHTML = Date()">
-                        Click me to display Date and Time.</button>
-
-                        <p id="demo"></p>
+			  		<div class="input"> 
+			  			<label for="vincode">VIN Code:</label> 
+			  			<input type="text" id="vincode" name="vin_code"> 
+			  		</div>
+			  		<div class="input"> 
+			  			<label for="stylename">Style Name:</label> 
+			  			<input type="text" id="stylename" name="style_name"> 
+			  		</div>
+			  		<div class="input"> 
+			  			<label for="primaryoptions">Primary Option Names:</label> 
+			  			<input type="text" id="primaryoptions" name="primary_options"> 
+			  		</div>
+			  		<div class="input"> 
+			  			<label for="optioncodes">Option Codes:</label> 
+			  			<input type="text" id="optioncodes" name="option_codes"> 
+			  		</div>
+			  		<div class="nonFactoryEquipment"> 
+			  			<label for="nonfactoryequipment">Non-Factory Equipment Description:</label> 
+			  			<input type="text" id="nonfactoryequipment" name="nonfactory_equipment"> 
+			  		</div>
+			  		<div class="input"> 
+			  			<label for="interiorcolor">Interior Color:</label> 
+			  			<input type="text" id="interiorcolor" name="interior_color"> 
+			  		</div>
+			  		<div class="input"> 
+			  			<label for="reducingacode">Reducing Acode:</label> 
+			  			<input type="text" id="reducingacode" name="reducing_acode"> 
+			  		</div>
 				</form>
-			</div>
+		  	</div>
+		  	<div class="rightColumn">
+		  		<form>
+			  		<div class="input"> 
+			  			<label for="modelcode">Model Code:</label> 
+			  			<input type="text" id="modelcode" name="model_code">
+			  		</div>
+					<div class="input"> 
+						<label for="trimname">Trim Name:</label> 
+						<input type="text" id="trimname" name="trim_name"> 
+					</div>
+					<div class="input"> 
+			  			<label for="wheelbase">Wheel Base:</label> 
+			  			<input type="text" id="wheelbase" name="wheel_base"> 
+			  		</div>
+					<div class="input"> 
+						<label for="equipment">Equipment Description:</label> 
+						<input type="text" id="equipment" name="equipment"> 
+					</div>
+					<div class="input"> 
+			  			<label for="exteriorcolor">Exterior Color:</label> 
+			  			<input type="text" id="exteriorcolor" name="exterior_color"> 
+			  		</div>
+					<div class="input"> 
+						<label for="reducingstyleid">Reducing Style ID:</label> 
+						<input type="text" id="reducingstyleid" name="reducing_style_id"> 
+					</div>
+					<div class="input"> 
+			  			<label for="languagelocale">Language & Locale:</label> 
+			  			<input type="text" id="languagelocale" name="language_locale"> 
+			  		</div>
+				</form>
+		  	</div>
+			<div class="mainText">
+				<input type="submit" value="Submit">
+            	<button type="button"
+                	onclick="document.getElementById('demo').innerHTML = Date()">
+                	Click me to display Date and Time.</button>
+            </div>
+                <p id="demo"></p>
 		</div>
 	</body>
 </html>
