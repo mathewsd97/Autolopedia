@@ -1,8 +1,8 @@
 .header {
-    background-color: #F1F1F1;
+    background-color: #800020;
     font-family: 'Sintony', sans-serif;
     text-align: center;
-    padding: 20px;
+    padding: 5%;
 }
 
 /* The navbar container */
@@ -30,14 +30,62 @@
 .row {
     text-align: center;
     vertical-align: center;
-    padding-top: 50px;
+    padding-top: 10%;
+    background: #ddd;
+}
 
+/* Add a card effect for articles */
+.card {
+    background-color: grey;
+    margin-top: 20px;
+    width: 50%;
+    font-family: 'Sintony', sans-serif;
+}
+
+.card a{
+    background-color: grey;
+    margin-top: 20px;
+    width: 50%;
+    font-family: 'Sintony', sans-serif;
+}
+
+.card a:hover {
+    color: black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Center column */
+.middlecolumn {   
+    width: 100%;
+    height: 75%;
+}
+
+#rounded1 {
+    border-radius: 25px;
+    padding: 10px; 
+    vertical-align: center;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: auto;   
 }
 
 /* Left column */
 .leftcolumn {   
     float: left;
-    width: 75%;
+    width: 50%;
+}
+
+/* Right column */
+.rightcolumn {   
+    float: right;
+    width: 50%;
 }
 
 .input[type=text] {
@@ -51,4 +99,11 @@
 
 input[type=text]:focus {
     background-color: lightblue;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 60%;
+    font-family: 'Sintony', sans-serif;
 }
