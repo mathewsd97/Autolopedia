@@ -50,7 +50,7 @@ function createTable() {
 function clearTable(table) {
   console.log("DM row 3: " + JSON.stringify(table));
   var rowCount = table.rows.length;
-  while(rowCount && --rowCount > 0) 
+  while(rowCount && --rowCount > 0)
     table.deleteRow(rowCount);
 }
 
@@ -125,7 +125,7 @@ async function callApi() {
             // console.log(interior);
 
             // vObj = ADS(vin,year,make, model, body_type, drive_type, coi, styleid, price, engine_type, fuel_type, hp, engine_size, fe_cty, fe_hwy, fuel_cap, transmission, tire_size, interior);
-            
+
             compressed = JSON.stringify(vObj);
 
             window.onload = function() {
@@ -136,7 +136,7 @@ async function callApi() {
        }
    });
 
-   createTable();  
+   createTable();
 };
 
 
