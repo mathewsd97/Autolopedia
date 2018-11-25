@@ -2,7 +2,7 @@
     background-color: #800020;
     font-family: 'Sintony', sans-serif;
     text-align: center;
-    padding: 5%;
+    padding: 3%;
 }
 
 /*form  { display: table;      }*/
@@ -22,36 +22,15 @@ label {
     width: 100%;
 }
 
-/* The navbar container */
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-}
-
-/* Navbar links */
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Links - change color on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
 .row {
     text-align: center;
-    vertical-align: center;
-    padding-top: 10%;
+    /*vertical-align: center; */
+
+    padding: 5%;
     background: #ddd;
 }
 
-/* Add a card effect for articles */
+/* for curvy buttons */
 .card {
     background-color: grey;
     margin-top: 20px;
@@ -71,17 +50,12 @@ label {
     color: lightblue;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
-/* Center column */
+/* centered column (beginning) */
 .middlecolumn {   
-    width: 100%;
-    height: 75%;
+    width: 100%;s
+    background-color: LightGrey;
+
 }
 
 #rounded1 {
@@ -89,26 +63,50 @@ label {
     padding: 10px; 
     vertical-align: center;
     z-index: 15;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 30%;
     margin: auto;   
 }
 
-/* Main column */
-.mainText {   
-    float: left;
+/* centered column (beginning) */
+.middlecolumn2 {   
     width: 100%;
-    /*background-color: grey;*/
-    /*margin-top: 20px;*/
-    /*width: 30%;*/
-    /*height: 40%;*/
-    /*font-family: 'Sintony', sans-serif;*/
+    height: 30%;
+    position:absolute;
+    top: 130%;
+    left: 23% ;
+    position-anchor: 10% 10%;
 }
-/*.mainText a:hover{   
-    color: lightblue;
-}*/
 
- .leftColumn {
+#rounded2 {
+    border-radius: 25px;
+    padding: 10px; 
+    z-index: 15;
+    top: 30%;
+    left: 30%;
+    vertical-align: center;
+    display: inline-block;
+}
+
+.mainText{
+    background-color: grey;
+    width: 30%;
+    font-family: 'Sintony', sans-serif;
+}
+
+.mainText a{
+    background-color: grey;
+    margin-top: 20px;
+    width: 30%;
+    height: 30%;
+    font-family: 'Sintony', sans-serif;
+}
+
+.mainText a:hover {
+    color: lightblue;
+}
+
+.leftColumn {
     float: left;
     width: 50%;
 }
@@ -141,7 +139,6 @@ input[type=text]:focus {
     background-color: pink;
 }
 
-/* Footer */
 .footer {
     text-align: center;
     margin-top: 40%;
