@@ -17,7 +17,7 @@
 </script>
 
 <body style="background-color: #ddd">
-	<div class="header" onclick="window.location.href='Home.html'">
+	<div class="header" style="cursor: pointer;" onclick="window.location.href='Home.html'">
 		<h1 style="color:LightGrey">AUTOLOPEDIA</h1>
 	</div>
 	<div class="row">
@@ -85,9 +85,11 @@
 	<div class="divider"/></div>
 	<div class="middleColumn" >
 		<div class="mainText" id="rounded2">
-			<input type="button" onclick="toggleTable();" value="SUBMIT"/>
+			<div style="cursor: pointer;" onclick="toggleTable()">
+				SUBMIT
+			</div>
 		</div>
-	</div>
+		<div class="divider"/></div>
 	<div class="middleColumnVIN">
 		<table id="vinresponse">
 		</table>
