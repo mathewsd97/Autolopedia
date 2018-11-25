@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Autolopedia</title>
+	<link href="styles.css" rel="stylesheet" />
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="test.js"></script>
+
+<body style="background-color: #ddd">
+	<div class="header" onclick="window.location.href='Home.html'">
+		<h1 style="color:LightGrey">AUTOLOPEDIA</h1>
+	</div>
+	<div class="row">
+		<div class="middleColumn">
+			<form>
+				<div class="input">
+					<label for="year">Year:</label>
+					<input type="text" id="year" name="year">
+				</div>
+				<div class="input">
+					<label for="model">Model:</label>
+					<input type="text" id="model" name="model">
+				</div>
+				<div class="input">
+					<label for="stylename">Make:</label>
+					<input type="text" id="make" name="make">
+				</div>
+			</form>
+		</div>
+		<div class="middlecolumn2" >
+			<div class="mainText" id="rounded2">
+				<div style="cursor: pointer;" onclick="callApi()" onclick="window.location.href='OUTPUT.html'">
+					SUBMIT
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<h5>Data + APIs provided by Autodata :)</h5>
+		</div>
+	</div>
+</body>
+</html>
