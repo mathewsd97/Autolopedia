@@ -16,6 +16,15 @@ label2 {
     text-align: center;
 }
 
+label3 {
+    width: 10%;
+    padding-right: 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    text-align: right;
+}
+
 .column {
     float: left;
     width: 100%;
@@ -115,7 +124,6 @@ label2 {
     color: lightblue;
 }
 
-
 .leftColumn {
     float: left;
     width: 50%;
@@ -146,12 +154,6 @@ input[type=text] {
 
 input[type=text]:focus {
     background-color: pink;
-}
-
-.footer {
-    text-align: center;
-    margin-top: 40%;
-    font-family: 'Sintony', sans-serif;
 }
 
 /* table (output1)*/
