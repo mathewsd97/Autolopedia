@@ -2,11 +2,8 @@
     background-color: #800020;
     font-family: 'Sintony', sans-serif;
     text-align: center;
-    padding: 3%;
+    padding: 5%;
 }
-
-/*form  { display: table;      }*/
-/*p     { display: table-row;  }*/
 
 label {
     width: 10%;
@@ -14,8 +11,8 @@ label {
     margin: 8px 0;
     box-sizing: border-box;
     white-space: pre-wrap;
+    column-count: 2;
     display: table-cell;
-    /*column-count: 2;*/
 }
  .column {
     float: left;
@@ -24,13 +21,12 @@ label {
 
 .row {
     text-align: center;
-    /*vertical-align: center; */
-
-    padding: 5%;
+    vertical-align: center;
+    padding-top: 10%;
     background: #ddd;
 }
 
-/* for curvy buttons */
+/* Add a card effect for articles */
 .card {
     background-color: grey;
     margin-top: 20px;
@@ -50,12 +46,17 @@ label {
     color: lightblue;
 }
 
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-/* centered column (beginning) */
+/* Center column */
 .middlecolumn {   
     width: 100%;
-    background-color: LightGrey;
-
+    height: 75%;
 }
 
 #rounded1 {
@@ -63,50 +64,17 @@ label {
     padding: 10px; 
     vertical-align: center;
     z-index: 15;
-    top: 30%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
     margin: auto;   
 }
 
-/* centered column (beginning) */
-.middlecolumn2 {   
+/* Main column (VINpg)*/
+.mainText {   
+    float: left;
     width: 100%;
-    height: 30%;
-    position:absolute;
-    top: 130%;
-    left: 23% ;
-    position-anchor: 10% 10%;
 }
-
-#rounded2 {
-    border-radius: 25px;
-    padding: 10px; 
-    z-index: 15;
-    top: 30%;
-    left: 30%;
-    vertical-align: center;
-    display: inline-block;
-}
-
-.mainText{
-    background-color: grey;
-    width: 30%;
-    font-family: 'Sintony', sans-serif;
-}
-
-.mainText a{
-    background-color: grey;
-    margin-top: 20px;
-    width: 30%;
-    height: 30%;
-    font-family: 'Sintony', sans-serif;
-}
-
-.mainText a:hover {
-    color: lightblue;
-}
-
-.leftColumn {
+ .leftColumn {
     float: left;
     width: 50%;
 }
@@ -116,21 +84,7 @@ label {
     width: 50%;
 }
 
-.middleColumn {
-    float: middle;
-    width: 100%;
-}
-
-.input2 {   
-    width: 100%;
-    height: 30%;
-    position:absolute;
-    top: 130%;
-    left: 23% ;
-    position-anchor: 10% 10%;
-}
-
-.input[type=text] {                      
+.input[type=text] {
     width: 100%;
     height: 70px;
     padding: 12px 20px;
@@ -146,7 +100,6 @@ input[type=text] {
     margin: 8px 0;
     box-sizing: border-box;
     column-count: 2;
-    /*display: table-cell;*/
 }
 
 input[type=text]:focus {
@@ -157,4 +110,28 @@ input[type=text]:focus {
     text-align: center;
     margin-top: 40%;
     font-family: 'Sintony', sans-serif;
+}
+
+/* table (output1)*/
+#vinresponse {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#vinresponse td, #vinresponse th {
+    border: 1px solid #444;
+    padding: 8px;
+}
+
+#vinresponse tr:nth-child(even){background-color: #f2f2f2;}
+
+#vinresponse tr:hover {background-color: #444;}
+
+#vinresponse th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
 }
