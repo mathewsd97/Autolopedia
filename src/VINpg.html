@@ -8,6 +8,13 @@
 </head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="test.js"></script>
+<script>
+		window.onload = function() {
+			document.getElementById("vinresponse").style.display = "none"
+			// callApi();
+			// createTable();
+		}
+</script>
 
 <body style="background-color: #ddd">
 	<div class="header" onclick="window.location.href='Home.html'">
@@ -78,10 +85,12 @@
 	<div class="divider"/></div>
 	<div class="middleColumn" >
 		<div class="mainText" id="rounded2">
-			<div style="cursor: pointer;" onclick="callApi(); window.location.href='OUTPUT.html'">
-				SUBMIT
-			</div>
+			<input type="button" onclick="toggleTable();" value="SUBMIT"/>
 		</div>
+	</div>
+	<div class="middleColumnVIN">
+		<table id="vinresponse">
+		</table>
 	</div>
 </body>
 
